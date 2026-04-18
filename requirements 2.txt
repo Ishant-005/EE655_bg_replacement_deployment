@@ -1,0 +1,11 @@
+# requirements.txt
+# WHY: Streamlit Cloud (and most hosting platforms) read this file to install
+# your Python dependencies inside a fresh container.
+# Pin major versions to avoid breaking changes from future releases.
+
+streamlit>=1.35.0
+tensorflow==2.13.0          # Use the same major version as your training env
+opencv-python-headless      # headless = no GUI libs (Qt etc.) — required on servers
+Pillow>=10.0.0
+numpy>=1.24.0
+protobuf==3.20.3            # Required for TF 2.x compatibility (as noted in notebook)
